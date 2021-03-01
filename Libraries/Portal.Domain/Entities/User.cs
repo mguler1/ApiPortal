@@ -10,6 +10,9 @@ namespace Portal.Domain.Entities
         public string FullName { get; set; }
         public string Email { get; set; }
         public bool IsDeleted { get; set; }
-    
+       public virtual ICollection<Article> Articles { get; set; }//kullanıcının birden fazla makalesi olabilir
+       public virtual ICollection<Comment> Comments { get; set; }//kullanıcının birden fazla yorumu olabilir
+       public virtual ICollection<Contact> Contacts { get; set; }//
+
     }
 }
