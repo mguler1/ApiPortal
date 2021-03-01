@@ -14,6 +14,7 @@ namespace Portal.Domain.Entities
        public virtual ICollection<Comment> Comments { get; set; }//kullanıcının birden fazla yorumu olabilir
        public virtual ICollection<Contact> Contacts { get; set; }//
        public virtual ICollection<CourseLesson> CourseLessons { get; set; }//
+       public virtual ICollection<PollVotitngRecord> PollVotitngRecords { get; set; }//
 
     }
 }

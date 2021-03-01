@@ -12,5 +12,7 @@ namespace Portal.Domain.Entities
         public bool  AllowGuetsToVote { get; set; }
         public DateTime  StartDate { get; set; }
         public DateTime?  EndDate { get; set; }
+
+        public virtual ICollection<PollAnswer> PollAnswers { get; set; }
     }
 }

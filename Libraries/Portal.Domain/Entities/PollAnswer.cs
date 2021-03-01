@@ -11,5 +11,6 @@ namespace Portal.Domain.Entities
         public virtual Poll Poll { get; set; }
         public string Name { get; set; }
         public int DisplayOrder { get; set; }
+        public virtual ICollection<PollVotitngRecord> PollVotitngRecords { get; set; }
     }
 }
