@@ -7,6 +7,7 @@ namespace Portal.Domain.Entities
 {
    public class Category:BaseEntity
     {
+        public string Name { get; set; }
         public string MetaTitle { get; set; }
         public string MetaKeyword { get; set; }
         public string MetaDescription { get; set; }
