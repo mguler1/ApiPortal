@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31005.135
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Libraries", "Libraries", "{60521F3E-A19D-4742-9B5A-D89DD5283E77}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{8A6E1926-46E3-429B-9FAB-B2D001601EAA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{8AABCDE0-6FD1-4A77-ADD9-5DAB3D2B4DDF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Portal.Domain", "Libraries\Portal.Domain\Portal.Domain.csproj", "{812E51E1-E21A-4EB9-B922-6A294F1BC9C3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{812E51E1-E21A-4EB9-B922-6A294F1BC9C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{812E51E1-E21A-4EB9-B922-6A294F1BC9C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{812E51E1-E21A-4EB9-B922-6A294F1BC9C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{812E51E1-E21A-4EB9-B922-6A294F1BC9C3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{812E51E1-E21A-4EB9-B922-6A294F1BC9C3} = {60521F3E-A19D-4742-9B5A-D89DD5283E77}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FE7FE04B-DD5D-45D9-B0C6-44BDEEC2E4E9}
+	EndGlobalSection
+EndGlobal
