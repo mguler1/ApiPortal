@@ -16,7 +16,8 @@ namespace Portal.Infastructure.Persitence.Configuration.Courses
             builder.Property(s => s.Description).IsRequired().HasMaxLength((int)MaxLenghtSize.Description);
             builder.Property(s => s.ShortDescription).IsRequired().HasMaxLength((int)MaxLenghtSize.ShortDescription);
             builder.Property(s =>s.MetaTitle).IsRequired().HasMaxLength((int)MaxLenghtSize.Metatitle);
-            builder.Property(s => new { s.MetaDescription, s.MetaKeyword }).IsRequired().HasMaxLength((int)MaxLenghtSize.MetaDescription);
+            builder.Property(s => s.MetaDescription).IsRequired().HasMaxLength((int)MaxLenghtSize.MetaDescription);
+            builder.Property(s => s.MetaKeyword).IsRequired().HasMaxLength((int)MaxLenghtSize.MetaDescription);
 
         }
     }

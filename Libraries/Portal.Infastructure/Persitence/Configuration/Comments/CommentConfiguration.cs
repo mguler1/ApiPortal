@@ -14,7 +14,8 @@ namespace Portal.Infastructure.Persitence.Configurations
         {
             builder.Property(s => s.ArticleId).IsRequired().HasMaxLength((int)MaxLenghtSize.Name);
             builder.Property(s => s.CommentText).IsRequired().HasMaxLength((int)MaxLenghtSize.Description);
-            builder.Property(s =>new { s.CommenterName,s.CommenterEmail }).IsRequired().HasMaxLength((int)MaxLenghtSize.EmailAddress);
+            builder.Property(s => s.CommenterName).IsRequired().HasMaxLength((int)MaxLenghtSize.EmailAddress);
+            builder.Property(s => s.CommenterEmail).IsRequired().HasMaxLength((int)MaxLenghtSize.EmailAddress);
 
         }
     }
