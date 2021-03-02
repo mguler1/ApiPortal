@@ -11,5 +11,6 @@ namespace Portal.Domain.Entities
         public int FileSize { get; set; }
         public string FileName { get; set; }
         public MediaType MediaType { get; set; }
+        public virtual  ICollection<ArticleMedia> ArticleMedias { get; set; }
     }
 }
