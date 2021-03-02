@@ -16,16 +16,16 @@ namespace Portal.Infastructure.Persitence
         IQueryable<T> GetMany(Expression<Func<T, bool>> expression, params Expression<Func<T, object>>[] includes);
         T InsertWithoutCommit(T entity);
 
-        void InsertBulk(IEnumerable<T> entities);
+        int InsertBulk(IEnumerable<T> entities);
 
-        void Update(T entity);
-        void UpdateWithoutCommit(T entity);
+        int Update(T entity);
+        int UpdateWithoutCommit(T entity);
 
         int Delete(T entity);
         int Remove(T entity);
 
         int Commit();
-        void DeleteBulk(IEnumerable<T> entities);
+        int DeleteBulk(IEnumerable<T> entities);
         bool Any(Expression<Func<T, bool>> expression);
     }
 }
